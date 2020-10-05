@@ -3,16 +3,16 @@ import { Redirect, Route } from 'react-router-dom'
 
 interface PrivateRouteProps {
     path: string,
-    component: JSX.Element,
+    Component: any,
     redirectTo: string
 }
 
-export const PrivateRoute: React.FC<PrivateRouteProps> = ({ path, component, redirectTo }) => {
+export const PrivateRoute: React.FC<PrivateRouteProps> = ({ path, Component, redirectTo }) => {
     return (
         <Route path={path}>
             {
                 localStorage.getItem('logged_in') === 'true' ?
-                    component :
+                    <Component /> :
                     <Redirect to={redirectTo} />
             }
         </Route>
