@@ -3,7 +3,7 @@ import { Redirect, Route } from 'react-router-dom'
 
 interface PrivateRouteProps {
     path: string,
-    Component: any,
+    Component: React.FC,
     redirectTo: string
 }
 
