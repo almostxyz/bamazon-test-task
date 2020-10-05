@@ -9,7 +9,7 @@ const NavbarItem = (props: any) => {
     )
 }
 
-export const Navbar = () => {
+export const Navbar: React.FC<{}> = () => {
     return (
         <Flex
             as='nav'
