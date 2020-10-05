@@ -31,7 +31,7 @@ export const Login: React.FC<{}> = () => {
                 onSubmit={async (values, { setErrors }) => {
                     const response = await login(values)
                     if (response) {
-                        history.push('/')
+                        history.push('/profile')
                     } else {
                         setErrors({ username: 'Имя пользователя или пароль введены неверно', password: 'Имя пользователя или пароль введены неверно' })
                     }
