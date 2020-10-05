@@ -9,6 +9,7 @@ import { theme, ThemeProvider, CSSReset } from '@chakra-ui/core'
 
 import { Navbar } from './components/Navbar';
 import { PrivateRoute } from './components/PrivateRoute';
+import { Login } from './pages/Login';
 
 function App() {
   return (
@@ -18,11 +19,7 @@ function App() {
       <Navbar />
       <Router>
         <Switch>
-          <Route path='/login'>
-            <div>
-              login page
-            </div>
-          </Route>
+          <Route path='/login' component={Login} />
 
           <PrivateRoute
             path='/books'
