@@ -6,7 +6,7 @@ import { Box, Button, Flex } from '@chakra-ui/core'
 import { InputField } from '../components/InputField'
 import { useHistory } from 'react-router-dom'
 
-export const Login: React.FC<{}> = ({ }) => {
+export const Login: React.FC<{}> = () => {
     // fake login request
     const login = async (values: any) => {
         return new Promise((resolve) => {
