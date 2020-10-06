@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Flex, Text } from '@chakra-ui/core'
+import { Button, Flex, Text } from '@chakra-ui/core'
 import { useHistory } from 'react-router-dom'
 import { Wrapper } from '../components/Wrapper'
 import { LOGGED_IN_KEY } from '../utils/constants'

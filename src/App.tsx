@@ -10,6 +10,8 @@ import { theme, ThemeProvider, CSSReset } from '@chakra-ui/core'
 import { Navbar } from './components/Navbar';
 import { PrivateRoute } from './components/PrivateRoute';
 import { Login } from './pages/Login';
+import { Profile } from './pages/Profile';
+import { Books } from './pages/Books';
 
 function App() {
   return (
@@ -23,13 +25,13 @@ function App() {
 
           <PrivateRoute
             path='/books'
-            component={<div>books page</div>}
+            Component={Books}
             redirectTo='/login'
           />
 
           <PrivateRoute
             path='/profile'
-            component={<div>profile page</div>}
+            Component={Profile}
             redirectTo='/login'
           />
 
