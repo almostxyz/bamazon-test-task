@@ -17,6 +17,7 @@ import data from './data/data.json'
 import { createStore } from 'redux';
 import rootReducer from './reducers/rootReducer';
 import { Provider } from 'react-redux'
+import { Main } from './pages/Main';
 
 const store = createStore(
   rootReducer
@@ -45,11 +46,8 @@ function App() {
               redirectTo='/login'
             />
 
-            <Route exact path='/'>
-              <div>
-                main page
-            </div>
-            </Route>
+            <Route exact path='/' component={Main} />
+
 
           </Switch>
         </Router>
