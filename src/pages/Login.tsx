@@ -25,7 +25,7 @@ export const Login: React.FC<{}> = () => {
     const history = useHistory()
 
     return (
-        <Wrapper>
+        <Wrapper variant='small'>
             <Formik
                 initialValues={{ username: '', password: '' }}
                 onSubmit={async (values, { setErrors }) => {
