@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Flex, Text } from '@chakra-ui/core'
 import { useHistory } from 'react-router-dom'
 import { Wrapper } from '../components/Wrapper'
-import { LOGGED_IN_KEY } from '../utils/constants'
+import { LOGGED_IN_KEY } from '../constants/constants'
 
 export const Profile: React.FC<{}> = () => {
     const history = useHistory()

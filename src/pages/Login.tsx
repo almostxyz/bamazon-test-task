@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik, Form } from 'formik'
 import { Wrapper } from '../components/Wrapper'
-import { LOGGED_IN_KEY } from '../utils/constants'
+import { LOGGED_IN_KEY } from '../constants/constants'
 import { Box, Button, Flex } from '@chakra-ui/core'
 import { InputField } from '../components/InputField'
 import { useHistory } from 'react-router-dom'
